@@ -86,17 +86,17 @@
               inherit description homepage license maintainers;
             };
           };
-        pythoneda-artifact-changes-0_0_1a1-for = { pythoneda-base
+        pythoneda-artifact-changes-0_0_1a2-for = { pythoneda-base
           , pythoneda-shared-git, pythoneda-artifact-event-changes, python }:
           pythoneda-artifact-changes-for {
-            version = "0.0.1a1";
+            version = "0.0.1a2";
             inherit pythoneda-base pythoneda-shared-git
               pythoneda-artifact-event-changes python;
           };
       in rec {
         packages = rec {
-          pythoneda-artifact-changes-0_0_1a1-python38 =
-            pythoneda-artifact-changes-0_0_1a1-for {
+          pythoneda-artifact-changes-0_0_1a2-python38 =
+            pythoneda-artifact-changes-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python38;
               pythoneda-shared-git =
@@ -105,8 +105,8 @@
                 pythoneda-artifact-event-changes.packages.${system}.pythoneda-artifact-event-changes-latest-python38;
               python = pkgs.python38;
             };
-          pythoneda-artifact-changes-0_0_1a1-python39 =
-            pythoneda-artifact-changes-0_0_1a1-for {
+          pythoneda-artifact-changes-0_0_1a2-python39 =
+            pythoneda-artifact-changes-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python39;
               pythoneda-shared-git =
@@ -115,8 +115,8 @@
                 pythoneda-artifact-event-changes.packages.${system}.pythoneda-artifact-event-changes-latest-python39;
               python = pkgs.python39;
             };
-          pythoneda-artifact-changes-0_0_1a1-python310 =
-            pythoneda-artifact-changes-0_0_1a1-for {
+          pythoneda-artifact-changes-0_0_1a2-python310 =
+            pythoneda-artifact-changes-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python310;
               pythoneda-shared-git =
@@ -126,44 +126,44 @@
               python = pkgs.python310;
             };
           pythoneda-artifact-changes-latest-python38 =
-            pythoneda-artifact-changes-0_0_1a1-python38;
+            pythoneda-artifact-changes-0_0_1a2-python38;
           pythoneda-artifact-changes-latest-python39 =
-            pythoneda-artifact-changes-0_0_1a1-python39;
+            pythoneda-artifact-changes-0_0_1a2-python39;
           pythoneda-artifact-changes-latest-python310 =
-            pythoneda-artifact-changes-0_0_1a1-python310;
+            pythoneda-artifact-changes-0_0_1a2-python310;
           pythoneda-artifact-changes-latest =
             pythoneda-artifact-changes-latest-python310;
           default = pythoneda-artifact-changes-latest;
         };
         defaultPackage = packages.default;
         devShells = rec {
-          pythoneda-artifact-changes-0_0_1a1-python38 = shared.devShell-for {
-            package = packages.pythoneda-artifact-changes-0_0_1a1-python38;
+          pythoneda-artifact-changes-0_0_1a2-python38 = shared.devShell-for {
+            package = packages.pythoneda-artifact-changes-0_0_1a2-python38;
             pythoneda-base =
               pythoneda-base.packages.${system}.pythoneda-base-latest-python38;
             python = pkgs.python38;
             inherit pkgs nixpkgsRelease;
           };
-          pythoneda-artifact-changes-0_0_1a1-python39 = shared.devShell-for {
-            package = packages.pythoneda-artifact-changes-0_0_1a1-python39;
+          pythoneda-artifact-changes-0_0_1a2-python39 = shared.devShell-for {
+            package = packages.pythoneda-artifact-changes-0_0_1a2-python39;
             pythoneda-base =
               pythoneda-base.packages.${system}.pythoneda-base-latest-python39;
             python = pkgs.python39;
             inherit pkgs nixpkgsRelease;
           };
-          pythoneda-artifact-changes-0_0_1a1-python310 = shared.devShell-for {
-            package = packages.pythoneda-artifact-changes-0_0_1a1-python310;
+          pythoneda-artifact-changes-0_0_1a2-python310 = shared.devShell-for {
+            package = packages.pythoneda-artifact-changes-0_0_1a2-python310;
             pythoneda-base =
               pythoneda-base.packages.${system}.pythoneda-base-latest-python310;
             python = pkgs.python310;
             inherit pkgs nixpkgsRelease;
           };
           pythoneda-artifact-changes-latest-python38 =
-            pythoneda-artifact-changes-0_0_1a1-python38;
+            pythoneda-artifact-changes-0_0_1a2-python38;
           pythoneda-artifact-changes-latest-python39 =
-            pythoneda-artifact-changes-0_0_1a1-python39;
+            pythoneda-artifact-changes-0_0_1a2-python39;
           pythoneda-artifact-changes-latest-python310 =
-            pythoneda-artifact-changes-0_0_1a1-python310;
+            pythoneda-artifact-changes-0_0_1a2-python310;
           pythoneda-artifact-changes-latest =
             pythoneda-artifact-changes-latest-python310;
           default = pythoneda-artifact-changes-latest;

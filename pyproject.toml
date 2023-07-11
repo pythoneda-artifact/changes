@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pythoneda-artifact-changes"
-version = "0.0.1a1"
+version = "0.0.1a2"
 description = "Artifact space in charge of managing source code changes"
 authors = ["rydnr <github@acm-sl.org>"]
 readme = "README.md"
