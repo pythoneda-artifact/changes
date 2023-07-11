@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "pythoneda-artifact-infrastructure-base"
-version = "0.0.1a2"
-description = "Artifact space for pythoneda-infrastructure/base"
+name = "pythoneda-artifact-changes"
+version = "0.0.1a1"
+description = "Artifact space in charge of managing source code changes"
 authors = ["rydnr <github@acm-sl.org>"]
 readme = "README.md"
-homepage = "https://github.com/pythoneda-artifact/infrastructure-base"
-packages = [{include = "pythonedaartifactinfrastructurebase"}]
+homepage = "https://github.com/pythoneda-artifact/changes"
+packages = [{include = "pythonedaartifactchanges"}]
 
 [tool.poetry.dependencies]
 dulwich = "^0.21.5"
@@ -14,7 +14,7 @@ paramiko = "^2.11.0"
 python = "^3.8"
 pythoneda-base = "^0.0.1a15"
 pythoneda-shared-git = "^0.0.1a3"
-pythoneda-artifact-event-git-tagging = "^0.0.1a1"
+pythoneda-artifact-event-changes = "^0.0.1a1"
 semver = "^3.0.0"
 
 [tool.poetry.dev-dependencies]

@@ -1,3 +1,3 @@
-# infrastructure-base
+# Changes
 
-This is the artifact-scope package for [pythoneda-infrastructure/base](https://github.com/pythoneda-infrastructure/base "pythoneda-infrastructure/base").
+This is an artifact-scope domain in change of source code changes.
